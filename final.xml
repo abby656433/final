@@ -1,1 +1,55 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_repeat" id="7" inline="true" x="-54" y="-23">
+    <value name="TIMES">
+      <block type="math_number" id="14">
+        <field name="NUM">10000</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_reverse" id="24"></block>
+    </statement>
+    <next>
+      <block type="controls_repeat" id="40" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="47">
+            <field name="NUM">20000</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_left" id="57"></block>
+        </statement>
+        <next>
+          <block type="controls_repeat" id="129" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="136">
+                <field name="NUM">10000</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_right" id="146">
+                <next>
+                  <block type="movement_forward" id="156"></block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_repeat" id="64" inline="true">
+                <value name="TIMES">
+                  <block type="math_number" id="77">
+                    <field name="NUM">120000</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="movement_reverse" id="87"></block>
+                </statement>
+                <next>
+                  <block type="movement_stop" id="172"></block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
